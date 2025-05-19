@@ -2,9 +2,9 @@ import Home from './Home'
 
 export const metadata = {
   title:
-    'Certified Yoga Teacher in Rishikesh | Yoga Training with Certification',
+    ' SaaS Performance Marketing Expert | Shitanshu Kumar',
   description:
-    'Become a certified yoga teacher in Rishikesh with expert-led training at Hari Om Yoga Vidya School. Join our Yoga Alliance-certified courses & start your teaching journey today!',
+    'Helping SaaS brands scale with performance marketing that drives pipeline and revenue.',
 }
 
 export default function page() {

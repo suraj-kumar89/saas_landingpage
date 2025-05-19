@@ -11,6 +11,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Preconnect for Google Fonts */}
+          {/* Favicon */}
+        <link rel="icon" href="/svgfavicon.svg" type="image/x-icon" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

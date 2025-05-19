@@ -5,6 +5,8 @@ import useAccelerate from './hooks/useAccelerate'
 import { useState } from 'react'
 import line from '../../../../public/assets/Svg/line.svg'
 import { FaArrowRightLong } from "react-icons/fa6";
+import CustomDropdown from '@/_components/CustomDropdown'
+import Link from 'next/link'
 export default function Accelerate() {
   const {
     heading,
@@ -104,12 +106,14 @@ const payload = {
 
                     {/* CTA Button */}
           <div className='pt-6'>
-            <button
+            <Link href='/book-a-call'>
+              <button
                 type="submit"
                 className=" flex justify-center items-center gap-3 md:hidden block w-full mt-4 bg-[#FF9900] hover:bg-[#FF9900] text-black font-semibold py-3 text-[13px] rounded-md transition"
               >
-              Start Free Audit <span><FaArrowRightLong size={15} /></span>
+              Book a Call<span><FaArrowRightLong size={15} /></span>
             </button>
+            </Link>
           </div>
       </div>
 
@@ -138,7 +142,7 @@ const payload = {
                   <input
                     required={field.required}
                     placeholder={field.placeholder}
-                    className="w-full p-3 rounded-md bg-[#FFFFFF0F] text-[12px] font-normal leading-[22px] text-white  placeholder:text-[#94A3B880]"
+                    className="w-full p-3 rounded-md bg-[#FFFFFF0F] text-[12px] font-normal leading-[22px] text-white  border-none focus:ring-0 focus:outline-none placeholder:text-[#94A3B880]"
                     onChange={(e) => setFormData({ ...formData, [field.label]: e.target.value })}
                   />
                 </div>
@@ -152,12 +156,19 @@ const payload = {
                   {field.label}
                   {field.required && <span className="text-[#A49670]">*</span>}
                 </label>
-                <input
-                  required={field.required}
-                  placeholder={field.placeholder}
-                  className="w-full p-3 rounded-md bg-[#FFFFFF0F] text-[12px] font-normal leading-[22px] text-white  placeholder:text-[#94A3B880]"
-                  onChange={(e) => setFormData({ ...formData, [field.label]: e.target.value })}
-                />
+                {field.label === 'Services' ? (
+                  <CustomDropdown
+                    value={formData[field.label] || ''}
+                    onChange={(val) => setFormData({ ...formData, [field.label]: val })}
+                  />
+                ) : (
+                  <input
+                    required={field.required}
+                    placeholder={field.placeholder}
+                    className="w-full p-3 rounded-md bg-[#FFFFFF0F] text-[12px] font-normal leading-[22px] text-[#94A3B880] focus:ring-0 focus:outline-none placeholder:text-[#94A3B880]"
+                    onChange={(e) => setFormData({ ...formData, [field.label]: e.target.value })}
+                  />
+                )}
               </div>
             ))}
 

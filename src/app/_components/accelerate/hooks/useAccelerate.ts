@@ -16,7 +16,7 @@ const useAccelerate = () => {
       { label: "sign-up rate", value: "+3.4×" },
     ],
     formTitle: "Tell us about your SaaS",
-    formSubtitle: "Get a free CRO audit tailored to your funnel.",
+    formSubtitle: "Get a free marketing audit tailored to your funnel and growth goals.",
     formFields: [
       { label: "Full Name", placeholder: "e.g. Sarah Johnson", required: true },
       { label: "Business Email", placeholder: "e.g. you@company.com", required: true },

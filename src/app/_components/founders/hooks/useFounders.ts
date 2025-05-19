@@ -2,7 +2,7 @@
 
 const useFounders = () => {
   return {
-    heading: 'What SaaS |Founders Say',
+    heading: 'What SaaS |Leaders Say',
     subheading:
       'Real results. Real growth. Here’s what clients are | saying about working together.',
     testimonials: [

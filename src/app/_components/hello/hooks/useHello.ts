@@ -12,7 +12,7 @@ const useHello = () => {
       { value: 'Google', label: 'Certified Expert' },
       { value: 'ROI', label: 'Focused Strategies' },
     ],
-    profileImage: '/assets/Images/profile.webp', // must be inside /public/images/
+    profileImage: '/assets/Images/pro.svg', // must be inside /public/images/
     linkedin: 'https://www.linkedin.com/in/shitanshu-kumar1/', // replace with actual URL
   }
 }
