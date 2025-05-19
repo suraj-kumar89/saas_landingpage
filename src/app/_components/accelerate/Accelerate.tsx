@@ -165,7 +165,7 @@ const payload = {
                   <input
                     required={field.required}
                     placeholder={field.placeholder}
-                    className="w-full p-3 rounded-md bg-[#FFFFFF0F] text-[12px] font-normal leading-[22px] text-[#94A3B880] focus:ring-0 focus:outline-none placeholder:text-[#94A3B880]"
+                    className="w-full p-3 rounded-md bg-[#FFFFFF0F] text-[12px] font-normal leading-[22px] text-white focus:ring-0 focus:outline-none placeholder:text-[#94A3B880]"
                     onChange={(e) => setFormData({ ...formData, [field.label]: e.target.value })}
                   />
                 )}
