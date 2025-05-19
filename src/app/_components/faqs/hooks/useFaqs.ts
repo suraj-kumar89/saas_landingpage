@@ -1,34 +1,39 @@
 const faqData = [
   {
-    question: 'What is a Google Ads Audit?',
+    question: 'What services do you offer?',
     answer:
-      'A Google Ads Audit is a comprehensive review of your Google Ads account aimed at identifying opportunities to improve performance and ROI. Our expert audit examines everything from keyword relevance to bid strategies, ensuring you get the most out of your ad spend.',
+      'We offer Performance Marketing, SEO, and CRO — built to acquire high-intent users, improve rankings for revenue-driving keywords, and optimize your entire funnel for conversions.',
   },
   {
-    question: 'How can a Google Ads Audit benefit my business?',
+    question: 'Do you specialize in SaaS growth?',
     answer:
-      'It identifies wasted spend, uncovers hidden opportunities, and offers clear recommendations to improve ROI.',
+      "Yes. We work specifically with SaaS brands to scale MRR, reduce CAC, and drive qualified trials and demos. Whether you're PLG or sales-led, we adapt to your model and funnel.",
   },
   {
     question: 'What does the Google Ads Audit process involve?',
     answer:
-      'The process includes reviewing campaign structure, keywords, ad copy, bidding strategies, targeting, and analytics setup.',
+      'We manage full-funnel campaigns across Google Ads, Meta, and LinkedIn, with retargeting, audience segmentation, and message testing built for SaaS customer journeys.',
   },
   {
-    question: 'How long does a Google Ads Audit take?',
+    question: 'How fast can we go live?',
     answer:
-      'Typically, the audit can take 3-5 business days depending on the size of your account.',
+      'You’ll have campaigns live in 7–10 business days, including strategy, copy, creative, tracking setup, and launch — so you can start collecting real data fast.',
   },
   {
     question:
-      'Will I see immediate improvements after implementing changes from the audit?',
+      'Do you handle landing pages and creatives?',
     answer:
-      'Yes, many clients begin to see improvements in performance and cost-efficiency shortly after applying the changes.',
+      'Yes. We design conversion-first landing pages and create high-performing ad creatives that align with your offer, funnel stage, and user behavior.',
   },
   {
-    question: 'Is my information secure during the Google Ads Audit?',
+    question: 'Can you work with our in-house team?',
     answer:
-      'Absolutely. Your data is treated with complete confidentiality and is never shared.',
+      'Absolutely. We act like an embedded performance team — collaborating closely with marketing, sales, or product to ensure aligned execution and measurable impact.',
+  },
+    {
+    question: 'What kind of results can I expect?',
+    answer:
+      'Most clients see a 2–3X ROAS, 30–50% lower CAC, and higher trial or demo volume within the first 90 days — backed by constant testing and optimization.',
   },
 ]
 
