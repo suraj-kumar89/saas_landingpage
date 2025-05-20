@@ -5,6 +5,7 @@ export const metadata = {
     ' SaaS Performance Marketing Expert | Shitanshu Kumar',
   description:
     'Helping SaaS brands scale with performance marketing that drives pipeline and revenue.',
+    robots: 'noindex, nofollow',
 }
 
 export default function page() {
