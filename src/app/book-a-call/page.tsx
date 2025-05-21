@@ -2,10 +2,8 @@
 'use client'
 
 import { useEffect } from 'react'
-import { useRouter } from 'next/navigation'
 
 export default function BookDemo() {
-  const router = useRouter()
 
   useEffect(() => {
     // Inject Calendly widget script
@@ -13,20 +11,7 @@ export default function BookDemo() {
     script.src = 'https://assets.calendly.com/assets/external/widget.js'
     script.async = true
     document.body.appendChild(script)
-
-    // Listen for the calendly scheduled event
-    const handleCalendlyEvent = (e: MessageEvent) => {
-      if (e.data?.event === 'calendly.event_scheduled') {
-        router.push('/meeting-booked')
-      }
-    }
-
-    window.addEventListener('message', handleCalendlyEvent)
-
-    return () => {
-      window.removeEventListener('message', handleCalendlyEvent)
-    }
-  }, [router])
+  })
 
   return (
     <div className="min-h-screen flex justify-center items-center bg-black p-4">
