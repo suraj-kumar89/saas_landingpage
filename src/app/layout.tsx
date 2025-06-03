@@ -11,15 +11,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Preconnect for Google Fonts */}
-          {/* Favicon */}
-        <link rel="icon" href="/svgfavicon.svg" type="image/x-icon" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-          rel="stylesheet"
-        />
         {/* Google Tag Manager */}
         <Script id="gtm-script" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -29,25 +20,28 @@ export default function RootLayout({
           })(window,document,'script','dataLayer','GTM-M2HQ4L2K');`}
         </Script>
         {/* End Google Tag Manager */}
+        {/* Preconnect for Google Fonts */}
+          {/* Favicon */}
+        <link rel="icon" href="/svgfavicon.svg" type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+          rel="stylesheet"
+        />
 
       </head>
       <body>
-        {/* Google Tag Manager (noscript) */}
-      <noscript
-        dangerouslySetInnerHTML={{
-          __html: `
-            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2HQ4L2K"
-                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
-          `
-        }}
-      />
-
-
         <div className="flex flex-col flex-1 relative">
           <Header />
           <div className="flex-1">{children}</div>
           <Footer/>
         </div>
+                {/* Google Tag Manager (noscript) */}
+
+          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2HQ4L2K"
+          height="0" width="0" style={{display: "none", visibility: "hidden"}}></iframe></noscript>
+
       </body>
     </html>
   )
