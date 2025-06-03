@@ -2,7 +2,6 @@ import { Header } from '@/_components'
 import './globals.css'
 import Footer from '@/_components/footer/Footer'
 import Script from 'next/script'
-import Link from 'next/link'
 
 export default function RootLayout({
   children,
@@ -17,7 +16,7 @@ export default function RootLayout({
         <link rel="icon" href="/svgfavicon.svg" type="image/x-icon" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <Link
+        <link
           href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
           rel="stylesheet"
         />
