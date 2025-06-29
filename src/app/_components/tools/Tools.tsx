@@ -15,8 +15,8 @@ export default function Tools() {
 
 <div className="relative overflow-hidden px-0 md:px-20 lg:px-56">
   {/* Left & Right Gradient Overlays */}
-  <div className="hidden lg:block pointer-events-none absolute top-0 left-[15%] h-full w-[344px] z-20 bg-gradient-to-r from-[#02050E] to-transparent" />
-  <div className="hidden lg:block pointer-events-none absolute top-0 right-[15%] h-full w-[344px] z-20 bg-gradient-to-l from-[#02050E] to-transparent" />
+  <div className="hidden lg:block pointer-events-none absolute top-0 left-[10%] h-full w-[444px] z-20 bg-gradient-to-r from-[#02050E] to-transparent" />
+  <div className="hidden lg:block pointer-events-none absolute top-0 right-[10%] h-full w-[444px] z-20 bg-gradient-to-l from-[#02050E] to-transparent" />
 
   {/* Scrolling Tool Rows */}
   <div className="space-y-3 relative z-10">

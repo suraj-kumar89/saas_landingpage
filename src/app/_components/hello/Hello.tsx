@@ -65,13 +65,13 @@ export default function Hello({ slug }: { slug?: string }) {
           <h1 className="text-[39px] md:text-[49px] font-semibold md:leading-15 leading-12 mb-2">
             Hello, I’m <span className="text-orange-400">{name}</span>
           </h1>
-          <p className="text-[16px] md:text-[20px] leading-[26px] md:leading-[32px] font-semibold text-gray-300 mb-4">
+          <div className="text-[16px] md:text-[20px] leading-[26px] md:leading-[32px] font-semibold text-gray-300 mb-4">
             {title.split('|').map((line, index) => (
                     <div key={index}>{line}</div>
-                  ))}</p>
-          <p className="text-[13px] font-normal leading-5 text-gray-400 mb-6 max-w-2xl">{description.split('|').map((line, index) => (
+                  ))}</div>
+          <div className="text-[13px] font-normal leading-5 text-gray-400 mb-6 max-w-2xl">{description.split('|').map((line, index) => (
                     <div key={index}>{line}</div>
-                  ))}</p>
+                  ))}</div>
 
           <div className="flex flex-wrap gap-6 mt-6">
             {stats.map((stat, idx) => (

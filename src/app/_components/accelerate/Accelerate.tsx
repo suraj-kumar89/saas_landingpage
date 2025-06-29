@@ -88,7 +88,7 @@ const payload = {
             <li key={idx} className="flex items-center gap-2 " >
               <span >
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                  <circle cx="8" cy="8.5" r="8" fill="#FF9900" fill-opacity="0.2"/>
+                  <circle cx="8" cy="8.5" r="8" fill="#FF9900" fillOpacity="0.2"/>
                   <circle cx="8" cy="8.5" r="4" fill="#FF9900"/>
                 </svg>
               </span>
@@ -189,7 +189,7 @@ const payload = {
             {/* CTA Button */}
             <button
               type="submit"
-              className="w-full mt-4 bg-[#FF9900] hover:bg-[#FF9900] text-black font-semibold py-3 rounded-md transition"
+              className="w-full mt-4 bg-[#FF9900] hover:bg-[#FF9900] text-black font-semibold py-3 rounded-md transition cursor-pointer"
             >
             {cta} →
           </button>

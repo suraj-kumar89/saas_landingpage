@@ -41,16 +41,16 @@ export default function Founders() {
   }, [current, testimonials.length])
 
   return (
-    <section className="bg-[#000000] text-white py-10 px-10 lg:px-0  lg:py-[120px] md:pl-12 lg:pl-[120px] overflow-hidden">
+    <section className="bg-[#000000] text-white py-10 px-4 lg:px-0  lg:py-[120px] md:pl-12 lg:pl-[120px] overflow-hidden">
       <div className=" flex flex-col lg:flex-row items-start justify-between ">
         {/* Left Column */}
         <div className="lg:w-1/3 shrink-0 mb-10 lg:mb-0">
           <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold mb-3">{heading.split('|').map((line, index) => (
                     <div key={index}>{line}</div>
                   ))}</h2>
-          <p className="text-sm md:text-16px lg:text-[16px] text-gray-400">{subheading.split('|').map((line, index) => (
+          <div className="text-sm md:text-16px lg:text-[16px] text-gray-400">{subheading.split('|').map((line, index) => (
                     <div key={index}>{line}</div>
-                  ))}</p>
+                  ))}</div>
         </div>
 
         {/* Right Column - Slider */}
@@ -63,7 +63,7 @@ export default function Founders() {
           {slides.map((t, index) => (
             <div
               key={index}
-              className={`w-[70%] lg:w-[70%] shrink-0 snap-start transition-opacity duration-700 ${
+              className={`w-[58%] lg:w-[70%] shrink-0 snap-start transition-opacity duration-700 ${
                 index % testimonials.length === current % testimonials.length
                   ? 'opacity-100'
                   : index % testimonials.length === (current + 1) % testimonials.length

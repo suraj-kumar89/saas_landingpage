@@ -15,9 +15,9 @@ export default function Saas() {
                     <div key={index}>{line}</div>
                   ))}</h2>
         </div>
-        <p className="lg:px-9 text-gray-400 mt-2 max-w-3xl font-normal leading-[22px] md:leading-7 text-[14px] md:text-[16px] lg:w-[50%]">{subheading.split('|').map((line, index) => (
+        <div className="lg:px-9 text-gray-400 mt-2 max-w-3xl font-normal leading-[22px] md:leading-7 text-[14px] md:text-[16px] lg:w-[50%]">{subheading.split('|').map((line, index) => (
                     <div key={index}>{line}</div>
-                  ))}</p>
+                  ))}</div>
         <a
           href={cta.link}
           className="lg:w-[15%] w-[50%] bg-[#FF9900] flex justify-center items-center gap-3 transition text-black font-medium px-5 py-3 rounded shadow text-sm"
@@ -39,9 +39,9 @@ export default function Saas() {
                     <div key={index}>{line}</div>
                   ))}
             </h3>
-            <p className="text-gray-400  text-[13px] leading-5">{pillar.description.split('|').map((line, index) => (
+            <div className="text-gray-400  text-[13px] leading-5">{pillar.description.split('|').map((line, index) => (
                     <div key={index}>{line}</div>
-                  ))}</p>
+                  ))}</div>
           </div>
         ))}
       </div>

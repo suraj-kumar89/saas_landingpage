@@ -47,7 +47,7 @@ export default function Footer() {
       {/* Bottom: Branding & Copyright */}
       <div className="flex flex-row justify-between items-start md:items-center w-full text-[10px] text-[#94A3B8]">
         <Image src={logo} alt='' width={200} height={200}/>
-        <p className="mt-0">© 2024 Shitanshu Kumar</p>
+        <p className="mt-0">© 2025 Shitanshu Kumar</p>
       </div>
     </footer>
   )
