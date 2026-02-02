@@ -1,6 +1,8 @@
 import { Header } from '@/_components'
 import './globals.css'
 import Footer from '@/_components/footer/Footer'
+import WhatsAppButton from './_components/WhatsApp'
+import DisableHubSpotChat from './_components/DisableHubsport'
 
 export default function RootLayout({
   children,
@@ -39,6 +41,8 @@ export default function RootLayout({
           <div className="flex-1">{children}</div>
           <Footer/>
         </div>
+         <WhatsAppButton />
+         <DisableHubSpotChat/>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
@@ -48,6 +52,7 @@ export default function RootLayout({
             style={{ display: 'none', visibility: 'hidden' }}
           ></iframe>
         </noscript>
+       
       </body>
     </html>
   )
